@@ -42,7 +42,7 @@ fun FocusScreen(
         templateViewModel.loadTemplates()
     }
 
-    val defaultDurations = listOf(25, 45)
+    val defaultDurations = listOf(25, 35)
     val templateDurations = templates.map { it.durationMinutes }.distinct()
     val allDurations = (defaultDurations + templateDurations).distinct().sorted()
 
